@@ -19,7 +19,7 @@ const CustomNavbar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="https://mern-bank-app.herokuapp.com/">
           <div className="brand-content">
             <img
               alt=""
@@ -35,7 +35,7 @@ const CustomNavbar = () => {
         {user && (
           <Nav className="mr-auto">
             <Nav.Item>
-              <Nav.Link as={Link} to="/MyAccount">
+              <Nav.Link as={Link} to="https://mern-bank-app.herokuapp.com/MyAccount">
                 MyAccount
               </Nav.Link>
             </Nav.Item>
@@ -55,10 +55,10 @@ const CustomNavbar = () => {
             )}
             {!user && (
               <Nav.Item className="authLinks">
-                <Nav.Link as={Link} to="/login">
+                <Nav.Link as={Link} to="https://mern-bank-app.herokuapp.com/login">
                   Login
                 </Nav.Link>
-                <Nav.Link as={Link} to="/signup">
+                <Nav.Link as={Link} to="https://mern-bank-app.herokuapp.com/signup">
                   Signup
                 </Nav.Link>
               </Nav.Item>
