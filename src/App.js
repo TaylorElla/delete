@@ -18,15 +18,15 @@ function App() {
         <Navbar />
         <div className="pages">
           <Routes>
-            <Route path="https://mern-bank-app.herokuapp.com/" element={<Home />} />
-            <Route path="https://mern-bank-app.herokuapp.com/MyAccount" element={<MyAccount />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/MyAccount" element={<MyAccount />} />
             <Route 
               path="/login" 
-              element={!user ? <Login /> : <Navigate to="https://mern-bank-app.herokuapp.com/MyAccount" />} 
+              element={!user ? <Login /> : <Navigate to="/MyAccount" />} 
             />
             <Route 
               path="/signup" 
-              element={!user ? <Signup /> : <Navigate to="https://mern-bank-app.herokuapp.com/MyAccount" />} 
+              element={!user ? <Signup /> : <Navigate to="/MyAccount" />} 
             />
           </Routes>
         </div>

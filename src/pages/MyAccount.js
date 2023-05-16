@@ -15,7 +15,7 @@ const MyAccount = () => {
 
   useEffect(() => {
     const fetchTransactions = async () => {
-      const response = await fetch('https://mern-bank-app.herokuapp.com/api/transactions', {
+      const response = await fetch('/api/transactions', {
         headers: { 'Authorization': `Bearer ${user.token}` },
       });
       const json = await response.json();

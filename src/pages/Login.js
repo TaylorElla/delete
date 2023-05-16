@@ -18,7 +18,7 @@ const Login = () => {
 
     if (loginResponse.success) {
       toast.success("Login successful!", { autoClose: 2000 });
-      navigate("https://mern-bank-app.herokuapp.com/MyAccount");
+      navigate("/MyAccount");
     } else {
       toast.error("Login failed!", { autoClose: 2000 });
     }
